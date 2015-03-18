@@ -1,0 +1,21 @@
+{
+  "name": "backend",
+  "version": "0.0.0",
+  "main": "server/app.js",
+  "dependencies": {
+    "body-parser": "~1.5.0",
+    "connect-mongo": "^0.4.1",
+    "cors": "^2.5.3",
+    "errorhandler": "~1.0.0",
+    "express": "~4.0.0",
+    "method-override": "~1.0.0",
+    "mongoose": "~3.8.8"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "start": "node server/app.js"
+  },
+  "private": true
+}
