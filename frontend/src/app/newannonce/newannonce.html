@@ -1,0 +1,124 @@
+<section class="newannonce">
+    <div class="container">
+        <div class="container-title">New annonce</div>
+
+        <form name="myForm" class="form-horizontal" novalidate ng-submit="add()">
+
+            <div class="col-sm-6">
+
+                <!-- Entreprise -->
+                <div class="form-group" ng-class="{'has-error': !myForm.entreprise.$valid && myForm.entreprise.$dirty}">
+                    <label class="col-sm-2 control-label">Entreprise</label>
+
+                    <div class="col-sm-10">
+                        <input type="entreprise" class="form-control" name="entreprise" ng-model="newannonce.entreprise" placeholder="Entreprise" required>
+
+                        <span class="help-block" ng-messages="myForm.entreprise.$error" ng-show="!myForm.entreprise.$valid && myForm.entreprise.$dirty">
+                            <span ng-message="required">Entreprise is required</span>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Logo -->
+                <div class="form-group" ng-class="{'has-error': !myForm.logo.$valid && myForm.logo.$dirty}">
+                    <label class="col-sm-2 control-label">Logo</label>
+
+                    <div class="col-sm-10">
+                        <input type="logo" class="form-control" name="logo" ng-model="newannonce.logo" placeholder="Logo" required>
+
+                        <span class="help-block" ng-messages="myForm.logo.$error" ng-show="!myForm.logo.$valid && myForm.logo.$dirty">
+                            <span ng-message="required">Logo is required</span>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Poste -->
+                <div class="form-group" ng-class="{'has-error': !myForm.poste.$valid && myForm.poste.$dirty}">
+                    <label class="col-sm-2 control-label">Poste</label>
+
+                    <div class="col-sm-10">
+                        <input type="poste" class="form-control" name="poste" ng-model="newannonce.poste" placeholder="Poste" required>
+
+                        <span class="help-block" ng-messages="myForm.poste.$error" ng-show="!myForm.poste.$valid && myForm.poste.$dirty">
+                            <span ng-message="required">Poste is required</span>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Experience -->
+                <div class="form-group" ng-class="{'has-error': !myForm.exeperience.$valid && myForm.exeperience.$dirty}">
+                    <label class="col-sm-2 control-label">Experience</label>
+
+                    <div class="col-sm-10">
+                        <input type="exeperience" class="form-control" name="exeperience" ng-model="newannonce.exeperience" placeholder="Experience" required>
+
+                        <span class="help-block" ng-messages="myForm.exeperience.$error" ng-show="!myForm.exeperience.$valid && myForm.exeperience.$dirty">
+                            <span ng-message="required">Experience is required</span>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Salaire -->
+                <div class="form-group" ng-class="{'has-error': !myForm.salaire.$valid && myForm.salaire.$dirty}">
+                    <label class="col-sm-2 control-label">Salaire</label>
+
+                    <div class="col-sm-10">
+                        <input type="salaire" class="form-control" name="salaire" ng-model="newannonce.salaire" placeholder="Salaire" required>
+
+                        <span class="help-block" ng-messages="myForm.salaire.$error" ng-show="!myForm.salaire.$valid && myForm.salaire.$dirty">
+                            <span ng-message="required">Salaire is required</span>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Lieu -->
+                <div class="form-group" ng-class="{'has-error': !myForm.lieu.$valid && myForm.lieu.$dirty}">
+                    <label class="col-sm-2 control-label">Lieu</label>
+
+                    <div class="col-sm-10">
+                        <input type="lieu" class="form-control" name="lieu" ng-model="newannonce.lieu" placeholder="Lieu" required>
+
+                        <span class="help-block" ng-messages="myForm.lieu.$error" ng-show="!myForm.lieu.$valid && myForm.lieu.$dirty">
+                            <span ng-message="required">Lieu is required</span>
+                        </span>
+                    </div>
+                </div>
+                
+
+
+
+
+            </div>
+
+            <div class="col-sm-6">
+                
+                <!-- Description -->
+                <div class="form-group" ng-class="{'has-error': !myForm.description.$valid && myForm.description.$dirty}">
+                    <label class="col-sm-2 control-label">Description</label>
+
+                    <div class="col-sm-10">
+                        <input type="description" class="form-control" name="description" ng-model="newannonce.description" placeholder="Description" required>
+
+                        <span class="help-block" ng-messages="myForm.description.$error" ng-show="!myForm.description.$valid && myForm.description.$dirty">
+                            <span ng-message="required">Description is required</span>
+                        </span>
+                    </div>
+                </div>
+
+
+                
+            </div>
+
+
+            <!-- Buttons -->
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default" ng-disabled="!myForm.$valid">Save</button>
+                    
+                    <a ui-sref="annonces" class="btn btn-default">Cancel</a>
+                </div>
+            </div>
+   
+        </form>
+    </div>
+</section>
