@@ -14,7 +14,9 @@
         ])
         .config(Config);
 
-    function Config() {
+    function Config($urlRouterProvider) {
+    	// Default root at startup
+        $urlRouterProvider.otherwise('/annonce-preview');
     }
 
 })();

@@ -1,0 +1,63 @@
+<div class="annonce-preview">
+
+	<!-- Search bar -->
+    <section class="articles-search">
+        <div class="container">
+            <div class="input-group">
+                <span class="input-group-addon">
+                    <i class="fa fa-search"></i>
+                </span>
+
+                <input type="text" class="form-control" name="searchText" ng-model="searchText" placeholder="Search" />
+
+                <div class="input-group-btn">
+                    <a ui-sref="newarticle" class="btn btn-default">
+                        <i class="fa fa-plus"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- No annonce -->
+    <div ng-show="filteredArticles.length <= 0">
+        <section>
+            <div class="container">
+                <div class="container-title">
+                    Pas d'annonces.
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Many annonces   
+    <div ng-show="filteredArticles.length > 0">
+
+        //Annonces 
+        <section class="annonce" ng-repeat="annonce in filteredArticles=(articles | filter:searchText)">
+            <div class="container">
+                <div class="annonce-header">
+                    <div class="annonce-header-title">
+                        <a ng-href="{{annonce.url}}" ng-bind="annonce.title" target="_blank"></a>
+                    </div>
+
+                    <div class="annonce-header-actions">
+                        <button type="button" class="btn btn-default fa fa-trash" ng-click="removeById(annonce._id)">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="annonce-body">
+                    <p ng-bind="annonce.description"></p>
+                </div>
+
+                <div class="annonce-footer">
+                    <div class="annonce-footer-tags">
+                        <button ng-click="searchByTag(tag)" ng-bind="tag" ng-repeat="tag in annonce.tags"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>-->
+
+</div>
