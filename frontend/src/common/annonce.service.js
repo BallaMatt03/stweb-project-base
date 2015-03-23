@@ -12,6 +12,8 @@
 
     function AnnonceService() {
 
+        //var BASE_URL = 'http://localhost:9000/annonces';
+
         // Init with 3 annonces
         var annonces = [{
             "_id": 0,
@@ -49,9 +51,19 @@
             "salaire": '50000 - 75000',
             "lieu": 'Montreuil',
             "competence": ["marketing", "c++", "django"]
+        }, {
+            "_id": 4,
+            "poste": "Chef de Projet",
+            "entreprise": "Mosanto",
+            "logo" : "LOGO",
+            "experience": '1 an',
+            "salaire": '50000 - 75000',
+            "lieu": 'Montreuil',
+            "competence": ["marketing", "c++", "django"]
         }];
 
         var factory = {
+            //search: search,
             findAll: findAll
         };
 

@@ -12,14 +12,23 @@
         .controller('AnnoncePreviewController', AnnoncePreviewController);
 
     function AnnoncePreviewController($scope, AnnonceService) {
-        
-        $scope.findAll = findAll;
+        $scope.searchByCompetence = searchByCompetence;
+        $scope.annonces = AnnonceService.findAll();
 
-        function findAll(){
-            return AnnonceService.findAll();
+        function searchByCompetence(competence) {
+            $scope.searchText = competence;
+
+            //search();
         }
+
+        /*function search() {
+            AnnonceService
+                .search($scope.searchText)
+                .then(function(annonces) {
+                    $scope.annonces = annonces;
+                });
+        }*/
         /*
-        $scope.searchByTag = searchByTag;
         $scope.removeById = removeById;
 
         // Load articles

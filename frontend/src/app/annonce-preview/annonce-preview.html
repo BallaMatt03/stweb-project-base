@@ -14,7 +14,7 @@
 
 
     <!-- No annonce -->
-    <div ng-show="filteredArticles.length <= 0">
+    <div ng-show="filteredAnnonces.length <= 0">
         <section>
             <div class="container">
                 <div class="container-title">
@@ -24,35 +24,37 @@
         </section>
     </div>
 
-    <!-- Many annonces   -->
-    <!--<div ng-show="filteredArticles.length > 0">-->
+    <!-- Many annonces -->
+    <div ng-show="filteredAnnonces.length > 0">
+        <!--Annonces--> 
+        <div class="container annonces">
+            <section class="col-md-4" ng-repeat="annonce in filteredAnnonces=(annonces | filter:searchText)">
+                <div class="annonce-contents">
+                    <div class="annonce-header">
+                        <!-- Logo -->
+                        <p ng-bind="annonce.logo"></p>
 
-    <!--Annonces--> 
-    <div class="container annonces">
-        <section class="col-md-4" ng-repeat="annonce in findAll()">
-            <div class="annonce-contents">
-                <div class="annonce-header">
-                    <div class="annonce-header-title">
-                        <a ng-href="{{annonce.poste}}" ng-bind="annonce.poste" target="_blank"></a>
+                        <!-- Poste -->
+                        <div class="annonce-header-title">
+                            <a ng-bind="annonce.poste" target="_blank"></a>
+                        </div>
+
+                        <!--<div class="annonce-header-actions">
+                            <button type="button" class="btn btn-default fa fa-trash">
+                            </button>
+                        </div>-->
                     </div>
 
-                    <!--<div class="annonce-header-actions">
-                        <button type="button" class="btn btn-default fa fa-trash">
-                        </button>
-                    </div>-->
-                </div>
+                    <div class="annonce-body"></div>
 
-                <div class="annonce-body">
-                    <p ng-bind="annonce.entreprise"></p>
-                </div>
-
-                <div class="annonce-footer">
-                    <div class="annonce-footer-tags">
-                        <button ng-click="searchByTag(tag)" ng-bind="competence" ng-repeat="competence in annonce.competence"></button>
+                    <div class="annonce-footer">
+                        <div class="annonce-footer-tags">
+                            <button ng-bind="competence" ng-repeat="competence in annonce.competence"></button>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </div>
 
 </div>
