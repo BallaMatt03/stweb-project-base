@@ -1,5 +1,5 @@
 /**
- * SERVICE: AnnoncePreviewService
+ * SERVICE: AnnonceService
  * @author Matthias Ballarini
  */
 
@@ -8,9 +8,9 @@
 
     angular
         .module('myApp')
-        .factory('AnnoncePreviewService', AnnoncePreviewService);
+        .factory('AnnonceService', AnnonceService);
 
-    function AnnoncePreviewService() {
+    function AnnonceService() {
 
         // Init with 3 annonces
         var annonces = [{
