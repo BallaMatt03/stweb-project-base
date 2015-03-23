@@ -10,11 +10,7 @@
 
                 <input type="text" class="form-control" name="searchText" ng-model="searchText" placeholder="Search" />
 
-                <div class="input-group-btn">
-                    <a ui-sref="newarticle" class="btn btn-default">
-                        <i class="fa fa-plus"></i>
-                    </a>
-                </div>
+                
             </div>
         </div>
     </section>
@@ -30,34 +26,34 @@
         </section>
     </div>
 
-    <!-- Many annonces   
+    <!-- Many annonces   -->
     <div ng-show="filteredArticles.length > 0">
 
-        //Annonces 
-        <section class="annonce" ng-repeat="annonce in filteredArticles=(articles | filter:searchText)">
-            <div class="container">
-                <div class="annonce-header">
+        <!--Annonces--> 
+        <section class="annonce col-md-4" ng-repeat="annonce in findAll()">
+            <div class="container ">
+                <div class="annonce-header ">
                     <div class="annonce-header-title">
-                        <a ng-href="{{annonce.url}}" ng-bind="annonce.title" target="_blank"></a>
+                        <a ng-href="{{annonce.poste}}" ng-bind="annonce.poste" target="_blank"></a>
                     </div>
 
-                    <div class="annonce-header-actions">
-                        <button type="button" class="btn btn-default fa fa-trash" ng-click="removeById(annonce._id)">
+                    <!--<div class="annonce-header-actions">
+                        <button type="button" class="btn btn-default fa fa-trash">
                         </button>
-                    </div>
+                    </div>-->
                 </div>
 
                 <div class="annonce-body">
-                    <p ng-bind="annonce.description"></p>
+                    <p ng-bind="annonce.entreprise"></p>
                 </div>
 
                 <div class="annonce-footer">
                     <div class="annonce-footer-tags">
-                        <button ng-click="searchByTag(tag)" ng-bind="tag" ng-repeat="tag in annonce.tags"></button>
+                        <button ng-click="searchByTag(tag)" ng-bind="competence" ng-repeat="competence in annonce.competence"></button>
                     </div>
                 </div>
             </div>
         </section>
-    </div>-->
+    </div>
 
 </div>
