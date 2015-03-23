@@ -11,7 +11,13 @@
         .module('myApp')
         .controller('AnnoncePreviewController', AnnoncePreviewController);
 
-    function AnnoncePreviewController($scope) {
+    function AnnoncePreviewController($scope, AnnonceService) {
+        
+        $scope.findAll = findAll;
+
+        function findAll(){
+            return AnnonceService.findAll();
+        }
         /*
         $scope.searchByTag = searchByTag;
         $scope.removeById = removeById;

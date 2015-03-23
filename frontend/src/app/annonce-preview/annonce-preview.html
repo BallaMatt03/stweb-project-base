@@ -1,19 +1,17 @@
 <div class="annonce-preview">
 
 	<!-- Search bar -->
-    <section class="articles-search">
+    <section class="annonces-search">
         <div class="container">
-            <div class="input-group">
+            <div class="input-group ">
                 <span class="input-group-addon">
                     <i class="fa fa-search"></i>
                 </span>
-
                 <input type="text" class="form-control" name="searchText" ng-model="searchText" placeholder="Search" />
-
-                
             </div>
         </div>
     </section>
+
 
     <!-- No annonce -->
     <div ng-show="filteredArticles.length <= 0">
@@ -27,12 +25,13 @@
     </div>
 
     <!-- Many annonces   -->
-    <div ng-show="filteredArticles.length > 0">
+    <!--<div ng-show="filteredArticles.length > 0">-->
 
-        <!--Annonces--> 
-        <section class="annonce col-md-4" ng-repeat="annonce in findAll()">
-            <div class="container ">
-                <div class="annonce-header ">
+    <!--Annonces--> 
+    <div class="container annonces">
+        <section class="col-md-4" ng-repeat="annonce in findAll()">
+            <div class="annonce-contents">
+                <div class="annonce-header">
                     <div class="annonce-header-title">
                         <a ng-href="{{annonce.poste}}" ng-bind="annonce.poste" target="_blank"></a>
                     </div>

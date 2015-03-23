@@ -40,6 +40,15 @@
             "salaire": '50000 - 75000',
             "lieu": 'Montreuil',
             "competence": ["marketing", "c++", "django"]
+        }, {
+            "_id": 3,
+            "poste": "Chef de Projet",
+            "entreprise": "Mosanto",
+            "logo" : "LOGO",
+            "experience": '1 an',
+            "salaire": '50000 - 75000',
+            "lieu": 'Montreuil',
+            "competence": ["marketing", "c++", "django"]
         }];
 
         var factory = {
