@@ -7,4 +7,23 @@
 	    overflow:auto;
 	    height : 400px;
 	}
+
+	.annonce-root{
+	    text-align : center;
+	    .annonce-footer{
+        i{
+	        $size:25px;
+	        //display:block;
+	        width:$size*3;
+	        height:$size;
+	        line-height:$size;
+	        border-radius:20%; 
+	        border : 1px solid #0F6AC6;
+	        color:#0F6AC6;
+        }
+    }
+	}
+
+    
+
 }

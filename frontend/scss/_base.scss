@@ -31,3 +31,16 @@ a {
         outline: none !important;
     }
 }
+
+.btn-add-annonce{
+    i{
+        $size:25px;
+        display:block;
+        width:$size;
+        height:$size;
+        line-height:$size;
+        border-radius:50%; 
+        border : 1px solid red;
+        color:red;
+    }
+}

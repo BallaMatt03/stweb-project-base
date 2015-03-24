@@ -28,7 +28,7 @@
     <div ng-show="filteredAnnonces.length > 0">
         <!--Annonces--> 
         <div class="container annonces">
-            <section class="col-md-4" ng-repeat="annonce in filteredAnnonces=(annonces | filter:searchText)">
+            <section class="col-md-4 annonce-root" ng-repeat="annonce in filteredAnnonces=(annonces | filter:searchText)">
                 <div class="annonce-contents">
                     <div class="annonce-header">
                         <!-- Logo -->
@@ -36,7 +36,7 @@
 
                         <!-- Poste -->
                         <div class="annonce-header-title">
-                            <a ng-bind="annonce.poste" target="_blank"></a>
+                            <a ui-sref="annonce" ng-bind="annonce.poste" target="_blank"></a>
                         </div>
 
                         <!--<div class="annonce-header-actions">
@@ -48,8 +48,9 @@
                     <div class="annonce-body"></div>
 
                     <div class="annonce-footer">
-                        <div class="annonce-footer-tags">
-                            <button ng-bind="competence" ng-repeat="competence in annonce.competence"></button>
+                        <div class="annonce-footer-competences">
+                            <i class="fa" ng-bind="competence" ng-repeat="competence in annonce.competence"></i>
+                            <!--<button ng-bind="competence" ng-repeat="competence in annonce.competence"></button>-->
                         </div>
                     </div>
                 </div>
