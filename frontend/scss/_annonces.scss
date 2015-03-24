@@ -9,7 +9,12 @@
 	}
 
 	.annonce-root{
+
 	    text-align : center;
+	    border-style:solid;
+	    border-color: #222884;
+	    border-radius:2%;
+
 	    .annonce-footer{
         i{
 	        $size:25px;
