@@ -1,0 +1,99 @@
+{
+    "poste": "Développeur Application Mobile",
+    "entreprise": "BlaBlaCar",
+    "logo": "LOGO",
+    "experience" : "3 ans",
+    "salaire": "35000 - 50000",
+    "lieu": "Nogent Sur Marne",
+    "competences": [ "JS Backend", "Android", "iOS" ]
+}
+{
+    "poste": "Ingénieur informaticien",
+    "entreprise": "Dashlane",
+    "logo": "LOGO",
+    "experience" : "2 ans",
+    "salaire": "35000 - 50000",
+    "lieu": "Issy Les Moulineaux",
+    "competences": [ "C/C++", "Java", "PHP" ]
+}
+{
+    "poste": "Ingénieur ou chargé d'études en informatique décisionnelle",
+    "entreprise": "Synthesio",
+    "logo": "LOGO",
+    "experience" : "1 an",
+    "salaire": "35000 - 50000",
+    "lieu": "Paris 15ème",
+    "competences": [ "PHP", "Ruby", "Data Scientist" ]
+}
+{
+    "poste": "Ingénieur développement",
+    "entreprise": "Parrot",
+    "logo": "LOGO",
+    "experience" : "non requis",
+    "salaire": "35000 - 50000",
+    "lieu": "Bordeaux",
+    "competences": [ "Python", "JS Backend", "UX/UI Designer" ]
+}
+{
+    "poste": "Ingénieur d'affaires informatique",
+    "entreprise": "BirchBox",
+    "logo": "LOGO",
+    "experience" : "2 ans",
+    "salaire": "25000 - 35000",
+    "lieu": "Toulouse",
+    "competences": [ "JS Frontend", "Java", "C/C++" ]
+}
+{
+    "poste": "Ingénieur informatique industrielle",
+    "entreprise": "MultiPosting",
+    "logo": "LOGO",
+    "experience" : "3 ans",
+    "salaire": "25000 - 30000",
+    "lieu": "Nice",
+    "competences": [ "JavaScript", "AngularJS", "NodeJS" ]
+}
+{
+    "poste": "Chef de Projet informatique",
+    "entreprise": "Sketchfab",
+    "logo": "LOGO",
+    "experience" : "5 ans",
+    "salaire": "50000 - 75000",
+    "lieu": "Tours",
+    "competences": [ "Product Manager", "UX/UI Designer", "Android" ]
+}
+{
+    "poste": "Développeur informatique",
+    "entreprise": "Photobox",
+    "logo": "LOGO",
+    "experience" : "1 an",
+    "salaire": "25000 - 30000",
+    "lieu": "Montdidier",
+    "competences": [ "Android", "iOS", "Java" ]
+}
+{
+    "poste": "Responsable informatique",
+    "entreprise": "Mention",
+    "logo": "LOGO",
+    "experience" : "3 ans",
+    "salaire": "75000 - 100000",
+    "lieu": "Etang sur Arroux",
+    "competences": [ "Python", "Java", "Ruby" ]
+}
+{
+    "poste": "Ingénieur système",
+    "entreprise": "Djump",
+    "logo": "LOGO",
+    "experience" : "3 ans",
+    "salaire": "50000 - 75000",
+    "lieu": "Valence d'Albigeois",
+    "competences": [ "Scala", "NoSQL", "MySQL" ]
+}
+{
+    "poste": "Ingénieur Web jQuery",
+    "entreprise": "Prestashop",
+    "logo": "LOGO",
+    "experience" : "3 ans",
+    "salaire": "25000 - 30000",
+    "lieu": "Saint Just Luzac",
+    "competences": [ "jQuery", "Java", "Photoshop" ]
+}

@@ -1,0 +1,9 @@
+{
+    "poste" : "test",
+    "entreprise" : "test",
+    "logo" : "LOGO",
+    "experience" : "test",
+    "salaire" : "test",
+    "lieu" : "test",
+    "competences" : ["test","test","test"]
+}
