@@ -36,10 +36,10 @@ a {
     i{
         $size:25px;
         display:block;
-        width:$size;
+        width:$size*7;
         height:$size;
         line-height:$size;
-        border-radius:50%; 
+        border-radius:20%; 
         border : 1px solid red;
         color:red;
     }

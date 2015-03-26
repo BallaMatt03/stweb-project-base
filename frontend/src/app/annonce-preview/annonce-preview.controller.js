@@ -13,21 +13,28 @@
 
     function AnnoncePreviewController($scope, AnnonceService) {
         $scope.searchByCompetence = searchByCompetence;
-        $scope.annonces = AnnonceService.findAll();
+        $scope.search = search;
+
+
+        $scope.annonces = [];
+        search();
+
+        ////////////
 
         function searchByCompetence(competence) {
             $scope.searchText = competence;
 
-            //search();
+            search();
         }
 
-        /*function search() {
+        function search() {
             AnnonceService
                 .search($scope.searchText)
                 .then(function(annonces) {
                     $scope.annonces = annonces;
                 });
-        }*/
+        }
+
         /*
         $scope.removeById = removeById;
 
@@ -37,14 +44,6 @@
 
 
         ////////////
-
-        function search() {
-            ArticlesService
-                .search($scope.searchText)
-                .then(function(articles) {
-                    $scope.articles = articles;
-                });
-        }
 
         function searchByTag(tag) {
             $scope.searchText = tag;

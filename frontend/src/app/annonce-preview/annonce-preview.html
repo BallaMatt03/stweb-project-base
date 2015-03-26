@@ -12,6 +12,11 @@
         </div>
     </section>
 
+    <div class="container statistiques">
+        
+
+    </div>
+
 
     <!-- No annonce -->
     <div ng-show="filteredAnnonces.length <= 0">
@@ -49,7 +54,7 @@
 
                     <div class="annonce-footer">
                         <div class="annonce-footer-competences">
-                            <i class="fa" ng-bind="competence" ng-repeat="competence in annonce.competence"></i>
+                            <i class="fa" ng-bind="competence" ng-repeat="competence in annonce.competences"></i>
                             <!--<button ng-bind="competence" ng-repeat="competence in annonce.competence"></button>-->
                         </div>
                     </div>
