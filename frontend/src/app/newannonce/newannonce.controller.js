@@ -23,7 +23,8 @@
             experience: '',
             salaire: '',
             lieu: '',
-            competence: []
+            competences: [],
+            description : ''
         };
 
         $scope.competencesline = '';
@@ -33,11 +34,11 @@
         
         function add() {
             // Transform competencesline to tag
-            $scope.newannonce.tags = convertCompetenceslineToCompetences($scope.competencesline);
+            $scope.newannonce.competences = convertCompetenceslineToCompetences($scope.competencesline);
 
             // Add new annonce and go to the main page
-            AnnoncesService.add($scope.newannonce).then(function() {
-                $state.go('annonces');
+            AnnonceService.add($scope.newannonce).then(function() {
+                $state.go('annonce-preview');
             }); 
         }
     }

@@ -20,7 +20,8 @@ var AnnonceSchema = new Schema({
     experience: String,
     salaire : String,
     lieu : String,
-    competences: [String]
+    competences: [String],
+    description : String
 });
 
 var Annonce = mongoose.model('Annonce', AnnonceSchema);

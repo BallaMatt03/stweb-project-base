@@ -16,16 +16,6 @@
                     </span>
                 </div>
 
-                <!-- Logo -->
-                <div class="form-group" ng-class="{'has-error': !myForm.logo.$valid && myForm.logo.$dirty}">
-                    <label>Logo</label>
-                    <input type="file" name="logo" ng-model="newannonce.logo" placeholder="Logo" required>
-
-                    <span class="help-block" ng-messages="myForm.logo.$error" ng-show="!myForm.logo.$valid && myForm.logo.$dirty">
-                        <span ng-message="required">Logo est requis</span>
-                    </span>
-                </div>
-
                 <!-- Poste -->
                 <div class="form-group" ng-class="{'has-error': !myForm.poste.$valid && myForm.poste.$dirty}">
                     <label>Poste</label>
@@ -41,15 +31,7 @@
                     <div>
                     <label>Compétences</label>
                     </div>
-                    <div class="col-sm-4">
-                    <select class="form-control" name="competence" ng-model="newannonce.competence" placeholder="Compétence" required></select>
-                    </div>
-                    <div class="col-sm-4">
-                    <select class="form-control" name="competence" ng-model="newannonce.competence" placeholder="Compétence" required></select>
-                    </div>
-                    <div class="col-sm-4">
-                    <select class="form-control" name="competence" ng-model="newannonce.competence" placeholder="Compétence" required></select>
-                    </div>
+                    <input type="text" class="form-control" name="competence" ng-model="competencesline" placeholder="Compétences" required>
 
                     <span class="help-block" ng-messages="myForm.competence.$error" ng-show="!myForm.competence.$valid && myForm.competence.$dirty">
                         <span ng-message="required">Compétences est requis</span>
@@ -59,7 +41,7 @@
                 <!-- Experience -->
                 <div class="form-group" ng-class="{'has-error': !myForm.experience.$valid && myForm.experience.$dirty}">
                     <label>Experience</label>
-                    <select class="form-control" name="experience" ng-model="newannonce.experience" placeholder="Experience" required></select>
+                    <input type="text" class="form-control" name="experience" ng-model="newannonce.experience" placeholder="Experience" required>
 
                     <span class="help-block" ng-messages="myForm.experience.$error" ng-show="!myForm.experience.$valid && myForm.experience.$dirty">
                         <span ng-message="required">Experience est requis</span>
@@ -69,7 +51,7 @@
                 <!-- Salaire -->
                 <div class="form-group" ng-class="{'has-error': !myForm.salaire.$valid && myForm.salaire.$dirty}">
                     <label>Salaire</label>
-                    <select class="form-control" name="salaire" ng-model="newannonce.salaire" placeholder="Salaire" required></select>
+                    <input type="text" class="form-control" name="salaire" ng-model="newannonce.salaire" placeholder="Salaire" required>
 
                     <span class="help-block" ng-messages="myForm.salaire.$error" ng-show="!myForm.salaire.$valid && myForm.salaire.$dirty">
                         <span ng-message="required">Salaire est requis</span>
@@ -90,21 +72,22 @@
 
             <div class="col-sm-1"></div>
 
-
             <div class="col-sm-6">
                 
                 <!-- Description -->
                 <div class="form-group" ng-class="{'has-error': !myForm.description.$valid && myForm.description.$dirty}">
                     <label>Description</label>
-                    <textarea  type="text" rows="23" class="form-control" name="description" ng-model="newannonce.description" placeholder="Description" required>
+                    <textarea  type="text" rows="15" class="form-control" name="description" ng-model="newannonce.description" placeholder="Description" required></textarea>
 
                     <span class="help-block" ng-messages="myForm.description.$error" ng-show="!myForm.description.$valid && myForm.description.$dirty">
                         <span ng-message="required">Description is required</span>
                     </span>
                 </div>
 
+                
                 <button type="submit" class="btn btn-default" ng-disabled="!myForm.$valid">Sauvegarder</button>
-                    <a ui-sref="annonces" class="btn btn-default">Annuler</a>
+                <a ui-sref="annonce-preview" class="btn btn-default">Annuler</a>
+                
 
             </div>
         </form>
