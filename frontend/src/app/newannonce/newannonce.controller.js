@@ -11,7 +11,7 @@
         .module('myApp')
         .controller('NewAnnonceController', NewAnnonceController);
 
-    function NewAnnonceController($scope, $state, AnnoncesService) {
+    function NewAnnonceController($scope, $state, AnnonceService) {
         // Define function
         $scope.add = add;
 
