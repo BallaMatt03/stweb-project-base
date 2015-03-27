@@ -8,6 +8,7 @@ var express = require('express'),
 // Routing
 var router = express.Router();
 router.get('/', search);
+router.get('/:id', getAnnonce);
 router.get('/popularcompetences', getMostPopularCompetences);
 router.post('/', create);
 router.delete('/:id', destroy);
@@ -111,5 +112,19 @@ function getMostPopularCompetences(req, res){
                 return res.send(404);
             }
             return res.send(result);
+        });
+}
+
+function getAnnonce(req, res){
+    var _id = req.params.id;
+    Annonce.findOne({"_id":_id},
+        function(err, result){
+            if (err) {
+                return handleError(res, err);
+            }
+            if (!result) {
+                return res.send(404);
+            }
+            return res.json(201,result);
         });
 }
