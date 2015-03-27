@@ -18,7 +18,8 @@
             search: search,
             add : add,
             removeById : removeById,
-            loadMostPopularCompetences : loadMostPopularCompetences
+            loadMostPopularCompetences : loadMostPopularCompetences,
+            getAnnonceById : getAnnonceById
         };
 
         return factory;
@@ -63,6 +64,13 @@
                 .then(function(response) {
                     return response.data;
                 });
+        }
+
+        function getAnnonceById(_id){
+            return $http.get(BASE_URL + "/" + _id)
+            .then(function(response){
+                return response.data;
+            });
         }
     }
     

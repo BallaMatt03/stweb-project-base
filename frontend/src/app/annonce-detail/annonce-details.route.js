@@ -14,8 +14,8 @@
     function Routing($stateProvider) {
         $stateProvider
             .state('annonce-details', {
-                url: '/:id',
-                templateUrl: 'app/annonce-details/annonce-details.html',
+                url: '/annonce-details/:id',
+                templateUrl: 'app/annonce-detail/annonce-details.html',
                 controller: 'AnnonceDetailsController'
         });
     }

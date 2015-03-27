@@ -12,10 +12,15 @@
         </div>
     </section>
 
-    <div class="container statistiques">
-        
-
-    </div>
+    <section class="container statistiques">
+            <span ng-repeat="popularcompetence in mostpopularcompetences">
+                <i class="fa" >
+                    <span ng-bind="popularcompetence.competences"></span>
+                    <span> : </span>
+                    <span ng-bind="popularcompetence.count"></span>
+                </i>
+            </span>
+    </section>
 
 
     <!-- No annonce -->
@@ -36,7 +41,7 @@
             <section class="col-md-4 annonce-section" ng-repeat="annonce in filteredAnnonces=(annonces | filter:searchText)">
                 <div class="caption annonce-mini">
                     <div class="annonce-entreprise"><p ng-bind="annonce.entreprise"></p></div>
-                    <div class="annonce-poste"><a ui-sref="annonce-details({id:annonce._id})" ng-bind="annonce.poste" target="_blank"></a></div>
+                    <div class="annonce-poste"><a ui-sref="annonce-details({id:annonce._id})" ng-bind="annonce.poste"></a></div>
                     <div class="annonce-competences"><p class="btn btn-primary annonce-competence" ng-bind="competence" ng-repeat="competence in annonce.competences"></a></div>
                 </div>  
             </section>
