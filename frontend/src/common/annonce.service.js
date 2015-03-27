@@ -15,7 +15,9 @@
         var BASE_URL = 'http://localhost:9000/annonces';
 
         var factory = {
-            search: search
+            search: search,
+            add : add,
+            removeById : removeById
         };
 
         return factory;
@@ -40,6 +42,15 @@
                 .then(function(response) {
                     return response.data;
                 });
+        }
+        /*add an annonce*/
+        function add(newannonce) {
+            return $http.post(BASE_URL, newannonce);
+        }
+
+        /*remove an annonce*/
+        function removeById(_id) {
+            return $http.delete(BASE_URL + '/' + _id);
         }
     }
     

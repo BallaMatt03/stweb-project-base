@@ -10,3 +10,8 @@
 
 55146aa4e38658fd57f7c780
 55146aede38658fd57f7c781
+
+
+db.annonces.aggregate([{$group: {_id:"$competences"}}])
+
+db.annonces.aggregate([{$unwind: "$competences"},{$group:{_id:"$competences", count:{$sum:1}}},{$project:{competences:"$_id", _id:0,count:1}}, {$sort:{count : -1}}, {$limit:5}])

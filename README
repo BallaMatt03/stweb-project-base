@@ -20,7 +20,10 @@ backend/annonces-init.json
 - 3 annonces par lignes - Done
 - finir les html
 - définir les routes :
-	/annonces : renvoi les annonces en json
+	GET /annonces : renvoi les annonces en json
+	GET /annonces/popularcompetences : renvoi les 5 competences les plus présentes en base
+	POST /annonces : upload une annonce
+	DELETE /annonces/id : remove une annonce a partir de son id
 
 25/03 :
 

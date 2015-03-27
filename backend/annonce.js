@@ -8,9 +8,9 @@ var express = require('express'),
 // Routing
 var router = express.Router();
 router.get('/', search);
+router.get('/popularcompetences', getMostPopularCompetences);
 router.post('/', create);
 router.delete('/:id', destroy);
-
 
 // Init model
 var AnnonceSchema = new Schema({
@@ -93,3 +93,22 @@ function destroy(req, res) {
         });
     });
 };
+
+function getMostPopularCompetences(req, res){
+    Annonce.aggregate(
+        [   {$unwind: "$competences"},
+            {$group:{_id:"$competences", count:{$sum:1}}},
+            {$project:{competences:"$_id", _id:0,count:1}},
+            {$sort:{count : -1}},
+            {$limit:5}
+        ],
+        function(err, result){
+            if (err) {
+                return handleError(res, err);
+            }
+            if (!result) {
+                return res.send(404);
+            }
+            return res.send(result);
+        });
+}
