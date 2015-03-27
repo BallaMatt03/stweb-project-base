@@ -1,11 +1,23 @@
 .annonce-preview{
 
-	//background: url(../assets/images/background2.jpg) no-repeat center top;
-	//background-size: auto 100%;
+	//background: url(../assets/images/background.jpg) no-repeat center top;
+	//background-size: auto 200%;
+	background-color : #5E88B7;
 
 	.annonces{
 	    overflow:auto;
-	    height : 400px;
+	    height : 750px;
+	}
+
+	.statistiques{
+		background-color:white;
+		$paddingstats : 12px;
+		$marginstats : 50px;
+		padding-top : $paddingstats;
+		padding-bottom : $paddingstats;
+		//margin-bottom:100px;
+		//margin-right: $marginstats;
+		//margin-left: $marginstats;
 	}
 
 	.annonce-root{

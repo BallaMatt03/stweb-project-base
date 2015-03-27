@@ -13,7 +13,7 @@ var bodyParser = require('body-parser'),
 
 
 // Connect to database
-//mongoose.connect('mongodb://localhost/postagram');
+mongoose.connect('mongodb://localhost/jobdream');
 
 
 // Configure express
@@ -28,7 +28,7 @@ app.use(errorHandler()); // Error handler - has to be last
 
 
 // Routing
-//app.use('/articles', require('./article.js'));
+app.use('/annonces', require('./annonce.js'));
 
 
 // Start server
@@ -37,5 +37,5 @@ var server = app.listen(9000, function() {
     var host = server.address().address
     var port = server.address().port
 
-    console.log('Example app listening at http://%s:%s', host, port)
+    console.log('App listening at http://%s:%s', host, port)
 });

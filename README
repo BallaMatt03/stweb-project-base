@@ -4,17 +4,23 @@ Projet de Fabien Lassié et Matthias Ballarini
 Tâches :
 
 fichiers HTML :
-- index.html (Matthias)
-- annonce-preview.html (Matthias)
+- index.html (Fabien)
+- annonce-preview.html (Fabien)
 - formulaire.html (Fabien)
 - annonce.html (Fabien)
+
+fichiers js : (Matthias)
+backend/annonce.js
+backend/index.js
+backend/annonces-init.json
 
 23/03 :
 
 - Mettre les photos sur github - Done
-- 3 annonces par lignes
+- 3 annonces par lignes - Done
 - finir les html
-- définir les routes
+- définir les routes :
+	/annonces : renvoi les annonces en json
 
 25/03 :
 
