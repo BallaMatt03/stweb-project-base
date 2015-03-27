@@ -33,14 +33,5 @@ a {
 }
 
 .btn-add-annonce{
-    i{
-        $size:25px;
-        display:block;
-        width:$size*7;
-        height:$size;
-        line-height:$size;
-        border-radius:20%; 
-        border : 1px solid red;
-        color:red;
-    }
+    color:red !important;
 }

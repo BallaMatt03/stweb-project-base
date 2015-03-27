@@ -2,7 +2,7 @@
 
 	//background: url(../assets/images/background.jpg) no-repeat center top;
 	//background-size: auto 200%;
-	background-color : #5E88B7;
+	background-color : #FFFFFF;
 
 	.annonces{
 	    overflow:auto;
@@ -51,6 +51,36 @@
 	        color:#0F6AC6;
         }
     }
+	}
+
+	.annonce-section {
+		padding : 10px 10px 10px 10px;
+		height : 170px;;
+	}
+
+	.annonce-mini {
+		text-align:center;
+		background:#99CCFF;
+		border-radius:10px;
+	}
+
+	.annonce-entreprise {
+		padding-top:10px;
+		height:50px;
+		font-size:25px;
+	}
+
+	.annonce-poste {
+		padding-top:10px;
+		height:60px;
+		font-size:18px;
+	}
+
+	.annonce-competences {
+	}
+
+	.annonce-competence {
+		margin : 5px 5px 5px 5px;
 	}
 
     
