@@ -14,16 +14,20 @@
     function AnnoncePreviewController($scope, AnnonceService) {
         $scope.searchByCompetence = searchByCompetence;
         $scope.search = search;
+        $scope.loadMostPopularCompetences = loadMostPopularCompetences;
+        $scope.removeById = removeById;
 
 
         $scope.annonces = [];
         search();
 
+        $scope.mostpopularcompetences = [];
+        loadMostPopularCompetences();
+
         ////////////
 
         function searchByCompetence(competence) {
             $scope.searchText = competence;
-
             search();
         }
 
@@ -35,38 +39,30 @@
                 });
         }
 
-        /*
-        $scope.removeById = removeById;
-
-        // Load articles
-        $scope.annonces = [];
-        search();
-
-
-        ////////////
-
-        function searchByTag(tag) {
-            $scope.searchText = tag;
-
-            search();
+        function loadMostPopularCompetences(){
+            AnnonceService
+                .loadMostPopularCompetences()
+                .then(function(competences){
+                    $scope.mostpopularcompetences = competences;
+            });
         }
 
         function removeById(_id) {
-            ArticlesService.removeById(_id)
+            AnnonceService.removeById(_id)
                 .then(function() {
-                    for (var i = 0; i < $scope.articles.length; ++i) {
-                        var article = $scope.articles[i];
+                    for (var i = 0; i < $scope.annonces.length; ++i) {
+                        var annonce = $scope.annonces[i];
 
-                        if (_id === article._id) {
-                            $scope.articles.splice(i, 1);
+                        if (_id === annonce._id) {
+                            $scope.annonces.splice(i, 1);
                             break;
                         }
                     }
                 })
                 .catch(function() {
-                    alert("Can't delete article");
+                    alert("Can't delete annonce");
                 });
-        }*/
+        }
     }
 
 

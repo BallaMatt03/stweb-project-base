@@ -17,7 +17,8 @@
         var factory = {
             search: search,
             add : add,
-            removeById : removeById
+            removeById : removeById,
+            loadMostPopularCompetences : loadMostPopularCompetences
         };
 
         return factory;
@@ -51,6 +52,11 @@
         /*remove an annonce*/
         function removeById(_id) {
             return $http.delete(BASE_URL + '/' + _id);
+        }
+
+        /*get most popular competences*/
+        function loadMostPopularCompetences(){
+            return $http.get(BASE_URL + "/popularcompetences");
         }
     }
     
