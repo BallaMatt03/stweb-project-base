@@ -96,11 +96,11 @@ function destroy(req, res) {
 
 function getMostPopularCompetences(req, res){
     Annonce.aggregate(
-        [   {$unwind: "$competences"},
-            {$group:{_id:"$competences", count:{$sum:1}}},
-            {$project:{competences:"$_id", _id:0,count:1}},
-            {$sort:{count : -1}},
-            {$limit:5}
+        [   {"$unwind": "$competences"},
+            {"$group":{"_id":"$competences", "count":{"$sum":1}}},
+            {"$project":{"competences":"$_id", "_id":0,"count":1}},
+            {"$sort":{"count" : -1}},
+            {"$limit":8}
         ],
         function(err, result){
             if (err) {

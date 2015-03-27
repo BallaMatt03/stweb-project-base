@@ -46,7 +46,10 @@
         }
         /*add an annonce*/
         function add(newannonce) {
-            return $http.post(BASE_URL, newannonce);
+            return $http.post(BASE_URL, newannonce)
+                .then(function(response) {
+                    return response.data;
+                });
         }
 
         /*remove an annonce*/
@@ -56,7 +59,10 @@
 
         /*get most popular competences*/
         function loadMostPopularCompetences(){
-            return $http.get(BASE_URL + "/popularcompetences");
+            return $http.get(BASE_URL + "/popularcompetences")
+                .then(function(response) {
+                    return response.data;
+                });
         }
     }
     
