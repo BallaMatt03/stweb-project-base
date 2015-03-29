@@ -1,67 +1,37 @@
 .annonce-preview{
 
-	//background: url(../assets/images/background.jpg) no-repeat center top;
-	//background-size: auto 200%;
-	background-color : #FFFFFF;
-
 	.annonces{
 	    overflow:auto;
 	    height : 750px;
+	    border : 1px solid #0F6AC6;
+		border-radius:10px;
 	}
 
 	.statistiques{
-		background-color:white;
 		$paddingstats : 12px;
 		$marginstats : 50px;
 		padding-top : $paddingstats;
 		padding-bottom : $paddingstats;
-		//margin-bottom:100px;
-		//margin-right: $marginstats;
-		//margin-left: $marginstats;
-		//position : center;
-		i{
-		    text-align:center;
-	        $size:43px;
-	        //display:block;
-	        width:$size*3;
-	        height:$size;
-	        line-height:$size;
-	        border-radius:20%; 
-	        border : 1px solid red;
-	        color:red;
-        }
+		text-align:center;
 	}
 
 	.annonce-root{
-
 	    text-align : center;
 	    border-style:solid;
 	    border-color: #222884;
 	    border-radius:2%;
-
-	    .annonce-footer{
-        i{
-	        $size:25px;
-	        //display:block;
-	        width:$size*3;
-	        height:$size;
-	        line-height:$size;
-	        border-radius:20%; 
-	        border : 1px solid #0F6AC6;
-	        color:#0F6AC6;
-        }
-    }
 	}
 
 	.annonce-section {
 		padding : 10px 10px 10px 10px;
-		height : 170px;;
+		height : 170px;
 	}
 
 	.annonce-mini {
 		text-align:center;
-		background:#99CCFF;
+		background:#CAE1FF;
 		border-radius:10px;
+		border: 1px solid #337ab7;
 	}
 
 	.annonce-entreprise {
@@ -76,13 +46,7 @@
 		font-size:18px;
 	}
 
-	.annonce-competences {
-	}
-
 	.annonce-competence {
 		margin : 5px 5px 5px 5px;
 	}
-
-    
-
 }

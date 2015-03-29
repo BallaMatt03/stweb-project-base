@@ -13,13 +13,12 @@
     </section>
 
     <section class="container statistiques">
-            <span ng-repeat="popularcompetence in mostpopularcompetences">
-                <i class="fa" >
-                    <span ng-bind="popularcompetence.competences"></span>
-                    <span> : </span>
-                    <span ng-bind="popularcompetence.count"></span>
-                </i>
-            </span>
+
+                    <!--<span ng-bind="popularcompetence.count"></span>-->
+                    <h3>Compétences les plus recherchées :</h3>
+                    <div class="annonce-competences"><p class="btn btn-primary annonce-competence" ng-bind="popularcompetence.competences + ' : '
+                     + popularcompetence.count + ' fois'"  ng-repeat="popularcompetence in mostpopularcompetences"></a></div>
+      
     </section>
 
 
