@@ -8,8 +8,8 @@ var express = require('express'),
 // Routing
 var router = express.Router();
 router.get('/', search);
-router.get('/:id', getAnnonce);
 router.get('/popularcompetences', getMostPopularCompetences);
+router.get('/:id', getAnnonce);
 router.post('/', create);
 router.delete('/:id', destroy);
 
@@ -26,7 +26,6 @@ var AnnonceSchema = new Schema({
 });
 
 var Annonce = mongoose.model('Annonce', AnnonceSchema);
-
 
 module.exports = router;
 
@@ -55,7 +54,7 @@ function search(req, res) {
 
     Annonce.find(searchReq, function(err, annonces) {
         if (err) {
-            return handleError(res, err);
+            return res.send(500, err);
         }
 
         return res.json(200, annonces);
@@ -67,7 +66,7 @@ function search(req, res) {
 function create(req, res) {
     Annonce.create(req.body, function(err, annonce) {
         if (err) {
-            return handleError(res, err);
+            return res.send(500, err);
         }
 
         return res.json(201, annonce);
@@ -79,7 +78,7 @@ function create(req, res) {
 function destroy(req, res) {
     Annonce.findById(req.params.id, function(err, annonce) {
         if (err) {
-            return handleError(res, err);
+            return res.send(500, err);
         }
 
         if (!annonce) {
@@ -88,7 +87,7 @@ function destroy(req, res) {
 
         annonce.remove(function(err) {
             if (err) {
-                return handleError(res, err);
+                return res.send(500, err);
             }
 
             return res.send(204);
@@ -106,7 +105,7 @@ function getMostPopularCompetences(req, res){
         ],
         function(err, result){
             if (err) {
-                return handleError(res, err);
+                return res.send(500, err);
             }
             if (!result) {
                 return res.send(404);
@@ -120,7 +119,7 @@ function getAnnonce(req, res){
     Annonce.findOne({"_id":_id},
         function(err, result){
             if (err) {
-                return handleError(res, err);
+                return res.send(500, err);
             }
             if (!result) {
                 return res.send(404);
