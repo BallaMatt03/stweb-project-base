@@ -5,7 +5,7 @@
     "experience" : "3 ans",
     "salaire": "35000 - 50000",
     "lieu": "Nogent Sur Marne",
-    "competences": [ "JS Backend", "Android", "iOS" ]
+    "competences": [ "js backend", "android", "ios" ]
 }
 {
     "poste": "Ingénieur informaticien",
@@ -14,7 +14,7 @@
     "experience" : "2 ans",
     "salaire": "35000 - 50000",
     "lieu": "Issy Les Moulineaux",
-    "competences": [ "C/C++", "Java", "PHP" ]
+    "competences": [ "c/c++", "java", "php" ]
 }
 {
     "poste": "Ingénieur ou chargé d'études en informatique décisionnelle",
@@ -23,7 +23,7 @@
     "experience" : "1 an",
     "salaire": "35000 - 50000",
     "lieu": "Paris 15ème",
-    "competences": [ "PHP", "Ruby", "Data Scientist" ]
+    "competences": [ "php", "ruby", "data scientist" ]
 }
 {
     "poste": "Ingénieur développement",
@@ -32,7 +32,7 @@
     "experience" : "non requis",
     "salaire": "35000 - 50000",
     "lieu": "Bordeaux",
-    "competences": [ "Python", "JS Backend", "UX/UI Designer" ]
+    "competences": [ "python", "js backend", "ux/ui designer" ]
 }
 {
     "poste": "Ingénieur d'affaires informatique",
@@ -41,7 +41,7 @@
     "experience" : "2 ans",
     "salaire": "25000 - 35000",
     "lieu": "Toulouse",
-    "competences": [ "JS Frontend", "Java", "C/C++" ]
+    "competences": [ "js frontend", "java", "c/c++" ]
 }
 {
     "poste": "Ingénieur informatique industrielle",
@@ -50,7 +50,7 @@
     "experience" : "3 ans",
     "salaire": "25000 - 30000",
     "lieu": "Nice",
-    "competences": [ "JavaScript", "AngularJS", "NodeJS" ]
+    "competences": [ "javascript", "angularjs", "nodejs" ]
 }
 {
     "poste": "Chef de Projet informatique",
@@ -59,7 +59,7 @@
     "experience" : "5 ans",
     "salaire": "50000 - 75000",
     "lieu": "Tours",
-    "competences": [ "Product Manager", "UX/UI Designer", "Android" ]
+    "competences": [ "nodejs", "ux/ui designer", "android" ]
 }
 {
     "poste": "Développeur informatique",
@@ -68,7 +68,7 @@
     "experience" : "1 an",
     "salaire": "25000 - 30000",
     "lieu": "Montdidier",
-    "competences": [ "Android", "iOS", "Java" ]
+    "competences": [ "android", "ios", "java" ]
 }
 {
     "poste": "Responsable informatique",
@@ -77,7 +77,7 @@
     "experience" : "3 ans",
     "salaire": "75000 - 100000",
     "lieu": "Etang sur Arroux",
-    "competences": [ "Python", "Java", "Ruby" ]
+    "competences": [ "python", "java", "ruby" ]
 }
 {
     "poste": "Ingénieur système",
@@ -86,7 +86,7 @@
     "experience" : "3 ans",
     "salaire": "50000 - 75000",
     "lieu": "Valence d'Albigeois",
-    "competences": [ "Scala", "NoSQL", "MySQL" ]
+    "competences": [ "scala", "nosql", "mysql" ]
 }
 {
     "poste": "Ingénieur Web jQuery",
@@ -95,5 +95,5 @@
     "experience" : "3 ans",
     "salaire": "25000 - 30000",
     "lieu": "Saint Just Luzac",
-    "competences": [ "jQuery", "Java", "Photoshop" ]
+    "competences": [ "jquery", "java", "photoshop" ]
 }
