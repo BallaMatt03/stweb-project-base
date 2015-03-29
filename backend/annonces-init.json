@@ -5,7 +5,8 @@
     "experience" : "3 ans",
     "salaire": "35000 - 50000",
     "lieu": "Nogent Sur Marne",
-    "competences": [ "js backend", "android", "ios" ]
+    "competences": [ "js backend", "android", "ios" ],
+    "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente autem totam, similique ducimus ipsa eveniet! Voluptatibus est ex, nulla quaerat! Possimus culpa sint nemo ullam ad quisquam! Quaerat, ex architecto?"
 }
 {
     "poste": "Ingénieur informaticien",
@@ -14,7 +15,8 @@
     "experience" : "2 ans",
     "salaire": "35000 - 50000",
     "lieu": "Issy Les Moulineaux",
-    "competences": [ "c/c++", "java", "php" ]
+    "competences": [ "c/c++", "java", "php" ],
+    "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente autem totam, similique ducimus ipsa eveniet! Voluptatibus est ex, nulla quaerat! Possimus culpa sint nemo ullam ad quisquam! Quaerat, ex architecto?"
 }
 {
     "poste": "Ingénieur ou chargé d'études en informatique décisionnelle",
@@ -23,7 +25,8 @@
     "experience" : "1 an",
     "salaire": "35000 - 50000",
     "lieu": "Paris 15ème",
-    "competences": [ "php", "ruby", "data scientist" ]
+    "competences": [ "php", "ruby", "data scientist" ],
+    "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente autem totam, similique ducimus ipsa eveniet! Voluptatibus est ex, nulla quaerat! Possimus culpa sint nemo ullam ad quisquam! Quaerat, ex architecto?"
 }
 {
     "poste": "Ingénieur développement",
@@ -32,7 +35,8 @@
     "experience" : "non requis",
     "salaire": "35000 - 50000",
     "lieu": "Bordeaux",
-    "competences": [ "python", "js backend", "ux/ui designer" ]
+    "competences": [ "python", "js backend", "ux/ui designer" ],
+    "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente autem totam, similique ducimus ipsa eveniet! Voluptatibus est ex, nulla quaerat! Possimus culpa sint nemo ullam ad quisquam! Quaerat, ex architecto?"
 }
 {
     "poste": "Ingénieur d'affaires informatique",
@@ -41,7 +45,8 @@
     "experience" : "2 ans",
     "salaire": "25000 - 35000",
     "lieu": "Toulouse",
-    "competences": [ "js frontend", "java", "c/c++" ]
+    "competences": [ "js frontend", "java", "c/c++" ],
+    "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente autem totam, similique ducimus ipsa eveniet! Voluptatibus est ex, nulla quaerat! Possimus culpa sint nemo ullam ad quisquam! Quaerat, ex architecto?"
 }
 {
     "poste": "Ingénieur informatique industrielle",
@@ -50,7 +55,8 @@
     "experience" : "3 ans",
     "salaire": "25000 - 30000",
     "lieu": "Nice",
-    "competences": [ "javascript", "angularjs", "nodejs" ]
+    "competences": [ "javascript", "angularjs", "nodejs" ],
+    "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente autem totam, similique ducimus ipsa eveniet! Voluptatibus est ex, nulla quaerat! Possimus culpa sint nemo ullam ad quisquam! Quaerat, ex architecto?"
 }
 {
     "poste": "Chef de Projet informatique",
@@ -59,7 +65,8 @@
     "experience" : "5 ans",
     "salaire": "50000 - 75000",
     "lieu": "Tours",
-    "competences": [ "nodejs", "ux/ui designer", "android" ]
+    "competences": [ "nodejs", "ux/ui designer", "android" ],
+    "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente autem totam, similique ducimus ipsa eveniet! Voluptatibus est ex, nulla quaerat! Possimus culpa sint nemo ullam ad quisquam! Quaerat, ex architecto?"
 }
 {
     "poste": "Développeur informatique",
@@ -68,7 +75,8 @@
     "experience" : "1 an",
     "salaire": "25000 - 30000",
     "lieu": "Montdidier",
-    "competences": [ "android", "ios", "java" ]
+    "competences": [ "android", "ios", "java" ],
+    "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente autem totam, similique ducimus ipsa eveniet! Voluptatibus est ex, nulla quaerat! Possimus culpa sint nemo ullam ad quisquam! Quaerat, ex architecto?"
 }
 {
     "poste": "Responsable informatique",
@@ -77,7 +85,8 @@
     "experience" : "3 ans",
     "salaire": "75000 - 100000",
     "lieu": "Etang sur Arroux",
-    "competences": [ "python", "java", "ruby" ]
+    "competences": [ "python", "java", "ruby" ],
+    "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente autem totam, similique ducimus ipsa eveniet! Voluptatibus est ex, nulla quaerat! Possimus culpa sint nemo ullam ad quisquam! Quaerat, ex architecto?"
 }
 {
     "poste": "Ingénieur système",
@@ -86,7 +95,8 @@
     "experience" : "3 ans",
     "salaire": "50000 - 75000",
     "lieu": "Valence d'Albigeois",
-    "competences": [ "scala", "nosql", "mysql" ]
+    "competences": [ "scala", "nosql", "mysql" ],
+    "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente autem totam, similique ducimus ipsa eveniet! Voluptatibus est ex, nulla quaerat! Possimus culpa sint nemo ullam ad quisquam! Quaerat, ex architecto?"
 }
 {
     "poste": "Ingénieur Web jQuery",
@@ -95,5 +105,6 @@
     "experience" : "3 ans",
     "salaire": "25000 - 30000",
     "lieu": "Saint Just Luzac",
-    "competences": [ "jquery", "java", "photoshop" ]
+    "competences": [ "jquery", "java", "photoshop" ],
+    "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente autem totam, similique ducimus ipsa eveniet! Voluptatibus est ex, nulla quaerat! Possimus culpa sint nemo ullam ad quisquam! Quaerat, ex architecto?"
 }
