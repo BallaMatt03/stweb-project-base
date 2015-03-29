@@ -51,6 +51,9 @@
                     <label>Description</label>
                     <p ng-bind="annonce.description"></p>
                 </div>
+                <form name="deleteForm" class="form-horizontal" novalidate ng-submit="removeById(annonce._id)">
+                    <button type="submit" class="btn btn-default">Supprimer cette annonce</button>
+                </form>
             </div>
         </form>
     </div>

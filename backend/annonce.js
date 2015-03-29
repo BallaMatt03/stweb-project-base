@@ -74,7 +74,7 @@ function create(req, res) {
 };
 
 
-// Deletes a article from the DB.
+// Deletes an annonce from the DB.
 function destroy(req, res) {
     Annonce.findById(req.params.id, function(err, annonce) {
         if (err) {
@@ -85,7 +85,7 @@ function destroy(req, res) {
             return res.send(404);
         }
 
-        annonce.remove(function(err) {
+        annonce.remove(function(err){
             if (err) {
                 return res.send(500, err);
             }
