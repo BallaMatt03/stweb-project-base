@@ -25,10 +25,10 @@ backend/annonces-init.json
 	POST /annonces : upload une annonce
 	DELETE /annonces/id : remove une annonce a partir de son id
 
-- régler les problèmes de routes : Matthias
-- probleme de stats : Matthias
+- régler les problèmes de routes : Matthias - Done
+- probleme de stats : Matthias - Done
 - design : Fabien
-- bouton suppression : Matthias
+- bouton suppression : Matthias - Done
 
 25/03 :
 
